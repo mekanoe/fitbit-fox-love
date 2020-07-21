@@ -1,0 +1,46 @@
+svg {
+  viewport-fill: #000000;
+}
+
+#skew {
+  transform: rotate(-25);
+}
+
+/* Flag stuff */
+.flagBar1 {
+  fill: #d23100;
+}
+.flagBar2 {
+  fill: #ffa749;
+}
+.flagBar3 {
+  fill: #f48fca;
+}
+.flagBar4 {
+  fill: #ac0067;
+}
+
+/* Clock stuff */
+#clockText {
+  text-length: 5;
+  font-size: 64;
+  font-family: Seville-Book;
+  font-weight: regular;
+  fill: white;
+}
+
+#dateMonth {
+  text-length: 4;
+  font-size: 32;
+  font-family: Seville-Bold;
+  font-weight: bold;
+  fill: white;
+}
+
+#dateDay {
+  text-length: 2;
+  font-size: 32;
+  font-family: Seville-Book;
+  font-weight: regular;
+  fill: white;
+}

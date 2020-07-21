@@ -1,0 +1,33 @@
+{
+  "name": "fitbit-fox-love",
+  "version": "0.1.0",
+  "private": true,
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@fitbit/sdk": "~4.1.0",
+    "@fitbit/sdk-cli": "^1.7.2",
+    "fitbit-sdk-types": "^4.3.8",
+    "prettier": "^2.0.5",
+    "typescript": "^3.9.7"
+  },
+  "fitbit": {
+    "appUUID": "01cc086c-cf74-4678-a28d-2036750d0612",
+    "appType": "clockface",
+    "appDisplayName": "Fox Love",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "#ffffff",
+    "requestedPermissions": [],
+    "buildTargets": [
+      "higgs",
+      "meson",
+      "gemini",
+      "mira"
+    ],
+    "i18n": {},
+    "defaultLanguage": "en-US"
+  },
+  "scripts": {
+    "build": "fitbit-build",
+    "debug": "fitbit"
+  }
+}

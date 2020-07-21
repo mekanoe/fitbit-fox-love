@@ -1,0 +1,21 @@
+<svg>
+  <g id="skew">
+    <g id="flagParts" transform="translate(35%)">
+      <rect class="flagBar4" x="-50%" width="350" height="10%+1" />
+      <rect class="flagBar3" x="-50%" width="350" height="6%" y="12%" />
+      <g transform="translate(-35%)">
+        <rect class="flagBar2" x="-50%" width="75%" height="6%" y="50%" />
+        <rect class="flagBar1" x="-50%" width="75%" height="150%" y="58%" />
+        <rect class="flagBar1" x="15%" width="75%" height="150%" y="58%" />
+        <rect class="flagBar2" x="15%" width="75%" height="6%" y="50%" />
+      </g>
+    </g>
+    <g id="clockParts">
+      <text id="clockText" x="-35" y="50%-25" text-anchor="start" />
+      <g id="dateParts" transform="translate(115)">
+        <text id="dateDay" text-anchor="start" y="50%-50">28</text>
+        <text id="dateMonth" text-anchor="start" y="50%-25">Sept</text>
+      </g>
+    </g>
+  </g>
+</svg>
