@@ -16,7 +16,10 @@
     "appDisplayName": "Fox Love",
     "iconFile": "resources/icon.png",
     "wipeColor": "#ffffff",
-    "requestedPermissions": [],
+    "requestedPermissions": [
+      "access_heart_rate",
+      "access_activity"
+    ],
     "buildTargets": [
       "meson",
       "gemini",

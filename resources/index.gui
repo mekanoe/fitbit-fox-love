@@ -17,5 +17,31 @@
         <text id="dateMonth" text-anchor="start" y="50%-25">Sept</text>
       </g>
     </g>
+    <g id="bottomParts" transform="translate(0,50)">
+      <!-- none of your business -->
+      <g>
+        <text class="statsRegular" text-anchor="end">FOX</text>
+        <text class="statsBold" text-anchor="start">LOVE</text>
+      </g>
+      <g transform="translate(170)">
+        <!-- add heart -->
+        <text id="statsDays" class="statsBold" text-anchor="end">1</text>
+        <text class="statsRegular" text-anchor="start">DAYS</text>
+      </g>
+      <g transform="translate(0,30)">
+        <text class="statsBold" text-anchor="end">HR</text>
+        <text id="statsHR" class="statsRegular" text-anchor="start">128</text>
+      </g>
+      <g transform="translate(0,60)">
+        <text class="statsRegular" text-anchor="end">STEPPIES</text>
+        <text id="statsSteps" class="statsBold" text-anchor="start">12000</text>
+      </g>
+      <g transform="translate(0,90)">
+        <text id="statsCals" class="statsBold" text-anchor="end">2000</text>
+        <text class="statsRegular" text-anchor="start">
+          BURNED
+        </text>
+      </g>
+    </g>
   </g>
 </svg>

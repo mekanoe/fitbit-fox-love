@@ -44,3 +44,19 @@ svg {
   font-weight: regular;
   fill: white;
 }
+
+.statsBold {
+  text-length: 16;
+  font-size: 28;
+  font-family: Seville-Bold;
+  font-weight: bold;
+  fill: white;
+}
+
+.statsRegular {
+  text-length: 16;
+  font-size: 28;
+  font-family: Seville-Book;
+  font-weight: regular;
+  fill: white;
+}
