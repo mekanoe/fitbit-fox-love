@@ -1,10 +1,18 @@
+import { display } from "display";
 import { HeartRateSensor } from "heart-rate";
-import { today } from "user-activity";
-import { statsDays, statsHR, statsSteps, statsCals } from "./elements";
+import { goals, today } from "user-activity";
+import { user } from "user-profile";
+import {
+  statsDays,
+  statsHR,
+  statsSteps,
+  statsCals,
+  statsState,
+} from "./elements";
 
 export const updateUI = (now: Date) => {
   updateDays(now);
-  updateHR();
+  updateHR(now);
   updateSteppies();
 };
 
@@ -19,10 +27,37 @@ const updateDays = (now: Date) => {
 
 // @ts-ignore
 const hrSensor = new HeartRateSensor();
-hrSensor.start();
 
-const updateHR = () => {
-  statsHR.text = hrSensor.heartRate || "---";
+const updateHR = (now: Date) => {
+  if (display.on) {
+    hrSensor.start();
+  } else {
+    hrSensor.stop();
+    statsHR.text = "LOW";
+    return;
+  }
+
+  const hr = hrSensor.heartRate;
+
+  if (!hr) {
+    statsHR.text = "HIGH";
+    return;
+  }
+
+  statsHR.text = `${hr}`;
+
+  const hrZone = user.heartRateZone(hr);
+  statsState.text = hrZoneText[hrZone] || "CHILL TIME";
+};
+
+const hrZoneText = {
+  "out-of-range": "NYANKO DAY",
+  "below-custom": "NYANKO DAY",
+  custom: "HYPER",
+  "fat-burn": "HYPER",
+  cardio: "ZOOMIES",
+  "above-custom": "ZOOMIES",
+  peak: "PEAK CAT",
 };
 
 const updateSteppies = () => {

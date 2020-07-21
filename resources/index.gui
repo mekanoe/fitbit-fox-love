@@ -17,30 +17,44 @@
         <text id="dateMonth" text-anchor="start" y="50%-25">Sept</text>
       </g>
     </g>
-    <g id="bottomParts" transform="translate(0,50)">
+    <g id="bottomParts" transform="translate(0,40)">
       <!-- none of your business -->
       <g>
         <text class="statsRegular" text-anchor="end">FOX</text>
         <text class="statsBold" text-anchor="start">LOVE</text>
       </g>
-      <g transform="translate(170)">
+      <g transform="translate(68,142)">
+        <image href="heart.png" width="20" height="20" />
+      </g>
+      <g transform="translate(165)">
         <!-- add heart -->
         <text id="statsDays" class="statsBold" text-anchor="end">1</text>
         <text class="statsRegular" text-anchor="start">DAYS</text>
       </g>
       <g transform="translate(0,30)">
-        <text class="statsBold" text-anchor="end">HR</text>
-        <text id="statsHR" class="statsRegular" text-anchor="start">128</text>
+        <text id="statsHR" class="statsBold" text-anchor="end">128</text>
+        <text id="statsHRLabel" class="statsRegular" text-anchor="start">
+          BPM
+        </text>
       </g>
       <g transform="translate(0,60)">
-        <text class="statsRegular" text-anchor="end">STEPPIES</text>
-        <text id="statsSteps" class="statsBold" text-anchor="start">12000</text>
+        <text id="statsSteps" class="statsBold" text-anchor="end">12000</text>
+        <text class="statsRegular" text-anchor="start">STEPPIES</text>
       </g>
       <g transform="translate(0,90)">
         <text id="statsCals" class="statsBold" text-anchor="end">2000</text>
         <text class="statsRegular" text-anchor="start">
           BURNED
         </text>
+      </g>
+      <g transform="translate(0,120)">
+        <text id="statsState" class="statsRegular" text-anchor="start"></text>
+      </g>
+    </g>
+    <g id="foxPart" transform="translate(-45,330)">
+      <rect fill="white" height="50%" width="100%"></rect>
+      <g transform="translate(150)">
+        <image href="fox.png" width="50" height="50"></image>
       </g>
     </g>
   </g>

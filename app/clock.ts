@@ -1,5 +1,5 @@
 import { preferences } from "user-settings";
-import { clockText } from "./elements";
+import { clockText, dateDay, dateMonth } from "./elements";
 
 const padNumber = (input: number): string => {
   let inputStr = String(input);
@@ -20,7 +20,7 @@ const wrap12Hours = (hours: number) => {
 };
 
 export const updateClock = (now: Date) => {
-  const use12HourClock = preferences.clockDisplay === "12h";
+  const use12HourClock = false; //preferences.clockDisplay === "12h";
 
   const hours = use12HourClock
     ? wrap12Hours(now.getHours())
@@ -29,4 +29,22 @@ export const updateClock = (now: Date) => {
   const minutes = padNumber(now.getMinutes());
 
   clockText.text = `${hours}:${minutes}`;
+
+  dateDay.text = `${now.getDate()}`;
+  dateMonth.text = monthNames[now.getMonth()];
 };
+
+const monthNames = [
+  "JAN",
+  "FEB",
+  "MARCH",
+  "APRIL",
+  "MAY",
+  "JUNE",
+  "JULY",
+  "AUG",
+  "SEPT",
+  "OCT",
+  "NOV",
+  "DEC",
+];
