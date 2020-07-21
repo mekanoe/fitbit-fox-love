@@ -22,7 +22,7 @@ const updateDays = (now: Date) => {
   const daysNow = now.getTime();
   const daysSince = (daysNow - daysStart) / dayInterval;
 
-  statsDays.text = `${daysSince.toFixed(2)}`;
+  statsDays.text = `${daysSince.toFixed(2)}`.slice(0, 5).replace(/\.$/, "");
 };
 
 // @ts-ignore
